@@ -1,0 +1,89 @@
+{
+    "name": "us-frost-dates-1991-2020",
+    "title": "US Frost Dates by NOAA Station (1991-2020 Normals)",
+    "version": "2026-10-21",
+    "description": "Median and cautious last spring and first fall 32 F freeze dates for 2357 US weather stations, derived from NOAA NCEI 1991-2020 U.S. Climate Normals.",
+    "licenses": [
+        {
+            "name": "CC-BY-4.0",
+            "path": "https://creativecommons.org/licenses/by/4.0/",
+            "title": "Creative Commons Attribution 4.0"
+        }
+    ],
+    "sources": [
+        {
+            "title": "NOAA NCEI U.S. Climate Normals 1991-2020",
+            "path": "https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals"
+        }
+    ],
+    "homepage": "https://gardenclock.com/frost-date-dataset/",
+    "resources": [
+        {
+            "name": "frost-dates",
+            "path": "gardenclock-us-frost-dates-1991-2020.csv",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "bytes": 225912,
+            "hash": "sha256:3b231351da2c0c3ab3f6889a0f8b2c3d55a338248880b2a55e8d42585753944d",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "station_id",
+                        "type": "string",
+                        "description": "NOAA GHCN station identifier"
+                    },
+                    {
+                        "name": "station_name",
+                        "type": "string",
+                        "description": "NOAA station name"
+                    },
+                    {
+                        "name": "city",
+                        "type": "string",
+                        "description": "Place name used by Garden Clock"
+                    },
+                    {
+                        "name": "state",
+                        "type": "string",
+                        "description": "Two-letter US state or territory code"
+                    },
+                    {
+                        "name": "latitude",
+                        "type": "number",
+                        "description": "Decimal degrees"
+                    },
+                    {
+                        "name": "longitude",
+                        "type": "number",
+                        "description": "Decimal degrees"
+                    },
+                    {
+                        "name": "median_last_spring_freeze",
+                        "type": "string",
+                        "description": "MM-DD, median (50 percent) last spring date at or below the threshold"
+                    },
+                    {
+                        "name": "cautious_last_spring_freeze",
+                        "type": "string",
+                        "description": "MM-DD, later and safer spring date from the same NOAA probability tables"
+                    },
+                    {
+                        "name": "median_first_fall_freeze",
+                        "type": "string",
+                        "description": "MM-DD, median (50 percent) first fall date at or below the threshold"
+                    },
+                    {
+                        "name": "cautious_first_fall_freeze",
+                        "type": "string",
+                        "description": "MM-DD, earlier and safer fall date from the same NOAA probability tables"
+                    },
+                    {
+                        "name": "threshold_f",
+                        "type": "integer",
+                        "description": "Temperature threshold in degrees Fahrenheit (32 for all rows)"
+                    }
+                ]
+            }
+        }
+    ]
+}
