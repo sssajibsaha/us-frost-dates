@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this dataset, please cite it as below.
+title: US Frost Dates by NOAA Station (1991-2020 Normals)
+version: 2026-10-21
+type: dataset
+license: CC-BY-4.0
+url: https://gardenclock.com/frost-date-dataset/
+authors:
+  - family-names: Saha
+    given-names: Sajib
+abstract: Median and cautious last spring and first fall 32 F freeze dates for 2357 US weather stations derived from NOAA NCEI 1991-2020 U.S. Climate Normals.
